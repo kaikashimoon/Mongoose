@@ -2,11 +2,9 @@ require('../conection')
 
 const Product = require('../models/Product')
 
-
-
-async function main() {
+const all = async () => {
    const products = await Product.find()
     console.log(products)
 }
 
-main()
+all()
